@@ -4,7 +4,7 @@
 %define	modprefix Catalyst
 
 %define version	0.09
-%define release	%mkrel 1
+%define release	%mkrel 2
 
 Summary:	File storage backend for session data
 Name:		%{name}
