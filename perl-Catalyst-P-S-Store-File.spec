@@ -26,6 +26,7 @@ BuildRequires:	perl(Module::Build)
 Provides:	perl-%{realname}
 Obsoletes:	perl-%{realname}
 BuildArch:	noarch
+Buildroot:	%{_tmppath}/%{name}-%{version}-%{release}-buildroot
 
 %description
 Catalyst::Plugin::Session::Store::File is an easy to use storage plugin for
