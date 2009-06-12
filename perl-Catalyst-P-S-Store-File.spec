@@ -21,6 +21,7 @@ BuildRequires:	perl(Catalyst::Plugin::Session) >= 0.21
 BuildRequires:	perl(Class::Accessor::Fast) >= 0.22
 BuildRequires:	perl(Class::Data::Inheritable) >= 0.04
 BuildRequires:	perl(Module::Build)
+BuildRequires:	perl(MooseX::Emulate::Class::Accessor::Fast)
 BuildRequires:	perl(namespace::clean)
 BuildArch:	noarch
 Buildroot:	%{_tmppath}/%{name}-%{version}-%{release}
