@@ -1,6 +1,6 @@
 %define upstream_name    Catalyst-Plugin-Session-Store-File
 %define abbrev_name      Catalyst-P-S-Store-File
-%define upstream_version 0.17
+%define upstream_version 0.18
 
 Name:		perl-%{abbrev_name}
 Version:	%perl_convert_version %{upstream_version}
