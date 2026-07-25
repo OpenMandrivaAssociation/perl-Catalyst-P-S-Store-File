@@ -3,14 +3,14 @@
 %define upstream_version 0.18
 
 Name:		perl-%{abbrev_name}
-Version:	%perl_convert_version %{upstream_version}
-Release:	5
+Version:	%{upstream_version}
+Release:	6
 
 Summary:	File storage backend for session data
 License:	Artistic/GPL
 Group:		Development/Perl
-URL:		https://search.cpan.org/dist/%{upstream_name}/
-Source0:	ftp://ftp.perl.org/pub/CPAN/modules/by-module/Catalyst/%{upstream_name}-%{upstream_version}.tar.gz
+URL:		https://dev.catalyst.perl.org/repos/Catalyst/Catalyst-Plugin-Session-Store-File/trunk
+Source0:	https://cpan.metacpan.org/authors/id/F/FL/FLORA/Catalyst-Plugin-Session-Store-File-%{upstream_version}.tar.gz
 
 BuildRequires:	make
 BuildRequires:	perl-devel
