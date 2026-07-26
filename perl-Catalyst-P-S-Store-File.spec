@@ -1,16 +1,14 @@
 %define upstream_name    Catalyst-Plugin-Session-Store-File
 %define abbrev_name      Catalyst-P-S-Store-File
-%define upstream_version 0.18
-
 Name:		perl-%{abbrev_name}
-Version:	%{upstream_version}
-Release:	6
+Version:	0.18
+Release:	7
 
 Summary:	File storage backend for session data
 License:	Artistic/GPL
 Group:		Development/Perl
 URL:		https://dev.catalyst.perl.org/repos/Catalyst/Catalyst-Plugin-Session-Store-File/trunk
-Source0:	https://cpan.metacpan.org/authors/id/F/FL/FLORA/Catalyst-Plugin-Session-Store-File-%{upstream_version}.tar.gz
+Source0:	https://cpan.metacpan.org/authors/id/F/FL/FLORA/Catalyst-Plugin-Session-Store-File-%{version}.tar.gz
 
 BuildRequires:	make
 BuildRequires:	perl-devel
@@ -30,7 +28,7 @@ Catalyst that uses an simple file to act as a shared memory interprocess cache.
 It is based on Cache::FileCache.
 
 %prep
-%setup -q -n %{upstream_name}-%{upstream_version}
+%setup -q -n %{upstream_name}-%{version}
 
 %build
 perl Makefile.PL INSTALLDIRS=vendor
@@ -62,9 +60,7 @@ make test
 - adding missing buildrequires:
 - adding missing buildrequires:
 - update to 0.17
-- using %%perl_convert_version
-
-* Wed Jul 30 2008 Thierry Vignaud <tv@mandriva.org> 0.09-4mdv2009.0
+- using %0.18 Wed Jul 30 2008 Thierry Vignaud <tv@mandriva.org> 0.09-4mdv2009.0
 + Revision: 255585
 - rebuild
 
